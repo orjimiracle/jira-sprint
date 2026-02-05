@@ -602,10 +602,16 @@
       <div class="footer-bottom">
         <p>© <span id="year"></span> Pravin Mishra. All rights reserved.</p>
         <p>Crafted with <span>cloud</span> excellence by Pravin Mishra</p>
-	<p>Pravin Mishra Portfolio v1.0 — Deployed on 05,02,2026 — By Orji Ekeoma Miracle</p>
+	<p>Pravin Mishra Portfolio v1.0 — Deployed on <span id="deployDate" style=color:white></span>
+		 — By Orji Ekeoma Miracle</p>
       </div>
 
     </div>
+	<script>
+  	const d = new Date();
+  	const formattedDate = d.toISOString().split('T')[0];
+  	document.getElementById("deployDate").textContent = formattedDate;
+	</script>
   </footer>
 
 
