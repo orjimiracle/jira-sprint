@@ -602,7 +602,7 @@
       <div class="footer-bottom">
         <p>© <span id="year"></span> Pravin Mishra. All rights reserved.</p>
         <p>Crafted with <span>cloud</span> excellence by Pravin Mishra</p>
-	<p>Pravin Mishra Portfolio v1.0 — Deployed on <span id="deployDate" style=color:white></span>
+	<p>Pravin Mishra Portfolio v1.0 — Deployed on <span id="deployDate" style=color:rgb(212, 179, 14)></span>
 		 — By Orji Ekeoma Miracle</p>
       </div>
 
@@ -613,7 +613,69 @@
   	document.getElementById("deployDate").textContent = formattedDate;
 	</script>
   </footer>
+<style>
+  /* Improve footer readability & spacing */
+  .footer {
+    background-color: #1b1b1b;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.6;
+  }
 
+  .footer-container {
+    padding: 40px 20px;
+  }
+
+  .footer-grid {
+    gap: 40px;
+  }
+
+  .footer h3 {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .footer p,
+  .footer li {
+    margin-bottom: 8px;
+    color: #cccccc;
+  }
+
+  .footer a {
+    color: #cccccc;
+    transition: color 0.3s ease;
+  }
+
+  .footer a:hover {
+    color: #ffffff;
+  }
+
+  .footer-socials a {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+
+  .footer-bottom {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    text-align: center;
+    font-size: 13px;
+    color: #aaaaaa;
+  }
+
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .footer-grid {
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    .footer-socials a {
+      font-size: 16px;
+    }
+  }
+</style>
 
 
 </body>
