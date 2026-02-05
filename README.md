@@ -36,7 +36,27 @@ Original:
 Add this line (example):
 
 ```html
-<p><strong>Deployed by:</strong> DMI Cohort 2 | Rahul Sharma | Group 4 | Week 1 | 16-01-2026</p>
+<p>Pravin Mishra Portfolio v1.0 — Deployed on <span id="deployDate" style=color:white></span>
+		 — By Orji Ekeoma Miracle</p>
+
+<script>
+  	const d = new Date();
+  	const formattedDate = d.toISOString().split('T')[0];
+  	document.getElementById("deployDate").textContent = formattedDate;
+	</script>
 ```
+
+To make the portfolio always show the current deployment date automatically, I added a small JavaScript snippet:
+
+Created a <span> element with id="deployDate" in the HTML to hold the date.
+
+Used JavaScript to get the current date with new Date().
+
+Formatted the date to YYYY-MM-DD using toISOString().split('T')[0].
+
+Updated the span’s content dynamically with document.getElementById("deployDate").textContent.
+
+Changed the date text color to white for better visibility on the page.
+
 
 ✅ This proof must be visible in your browser screenshot submission.
